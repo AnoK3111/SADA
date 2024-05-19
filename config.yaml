@@ -1,0 +1,11 @@
+# Default update config
+# Config order: hparams_registry -> config.yaml -> CLI
+
+swad: LossValley
+swad_kwargs:
+  n_converge: 4
+  n_tolerance: 6
+  tolerance_ratio: 0.3
+test_batchsize: 32
+metric : ['test_in', 'test_f1_micro', 'test_f1_macro']
+indomain_test: False  # use indomain test split or not
